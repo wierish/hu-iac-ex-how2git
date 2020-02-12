@@ -21,7 +21,7 @@ public class App {
 		Goose goose = objectMapper.readValue(dataFile, Goose.class);
 
 		// Generate random size
-		int size = r.ints(0, 100).findFirst().getAsInt();
+		int size = 42;
 		goose.setSize(size);
 
 		// Write goose to file
